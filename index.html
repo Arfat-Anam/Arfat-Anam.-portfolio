@@ -230,32 +230,81 @@
             </div>
         </div>
     </section>
-
-    <section id="projects">
-        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Featured Projects</h2>
+<section id="projects">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; text-align: center;">My Digital Archive</h2>
         <div class="grid-container">
-            <div class="glass-panel">
-                <h3 style="color: var(--primary);">Statistical Data Model</h3>
-                <p style="margin-top: 15px; color: #cbd5e1;">A Python-based analysis tool applying theoretical mathematics to solve practical data sets.</p>
+            <div class="glass-panel project-card">
+                <h3 style="color: var(--primary);">Python Data Analyzer</h3>
+                <p style="margin: 15px 0; color: #cbd5e1;">A tool built with Pandas/Matplotlib to visualize statistical trends in mathematical datasets.</p>
+                <a href="https://github.com/anamarfat/your-repo-name" class="btn-small">View Code <i class="fab fa-github"></i></a>
             </div>
-            <div class="glass-panel">
-                <h3 style="color: var(--primary);">Interactive Portfolio</h3>
-                <p style="margin-top: 15px; color: #cbd5e1;">A front-end web development project showcasing HTML, CSS, and 3D JavaScript integration.</p>
+
+            <div class="glass-panel project-card">
+                <h3 style="color: var(--primary);">OOP Management System</h3>
+                <p style="margin: 15px 0; color: #cbd5e1;">A student management system demonstrating Object-Oriented Programming principles in Python.</p>
+                <a href="https://github.com/anamarfat/your-repo-name" class="btn-small">View Code <i class="fab fa-github"></i></a>
+            </div>
+            
+            <div class="glass-panel project-card">
+                <h3 style="color: var(--primary);">Mathematical Solvers</h3>
+                <p style="margin: 15px 0; color: #cbd5e1;">A collection of scripts for solving Numerical Analysis problems using Python logic.</p>
+                <a href="https://github.com/anamarfat/your-repo-name" class="btn-small">View Code <i class="fab fa-github"></i></a>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="glass-panel" style="max-width: 700px; margin: 0 auto; width: 100%;">
-            <h2 style="text-align: center; color: var(--primary); margin-bottom: 30px;">Let's Get In Touch</h2>
+        <div class="glass-panel" style="max-width: 800px; margin: 0 auto; width: 100%; text-align: center;">
+            <h2 style="color: var(--primary); margin-bottom: 10px;">Get In Touch</h2>
+            <p style="color: #94a3b8; margin-bottom: 30px;">Currently open to Data Science internships and Web Dev projects.</p>
+            
+            <div class="social-links" style="font-size: 2rem; margin-bottom: 30px;">
+                <a href="mailto:yourname@email.com" style="color: white; margin: 0 15px;"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/anamarfat" target="_blank" style="color: #0077b5; margin: 0 15px;"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/anamarfat" target="_blank" style="color: white; margin: 0 15px;"><i class="fab fa-github"></i></a>
+            </div>
+
             <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Write your message here..." required></textarea>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea rows="4" placeholder="How can we collaborate?" required></textarea>
                 <button type="submit" class="btn" style="width: 100%; background: var(--primary); color: #000; font-weight: bold;">Send Message</button>
             </form>
         </div>
     </section>
+
+    <style>
+        /* Extra styles for the new elements */
+        .project-card {
+            transition: 0.3s;
+            border: 1px solid var(--glass-border);
+        }
+        .project-card:hover {
+            border-color: var(--primary);
+            background: rgba(255,255,255,0.08);
+        }
+        .btn-small {
+            display: inline-block;
+            padding: 8px 15px;
+            border: 1px solid var(--primary);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+        .btn-small:hover {
+            background: var(--primary);
+            color: black;
+        }
+        .social-links a {
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+    </style>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
